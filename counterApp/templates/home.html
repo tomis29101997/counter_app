@@ -1,0 +1,7 @@
+<h1>POČÍTÁNÍ SLOV</h1>
+<a href= "{% url 'about' %}">O APLIKACI</a>
+<form action="{% url 'countJmeno' %}">
+ <textarea cols="40" rows="5" name="fulltext"></textarea>
+ <br><br>
+ <input type="submit" value="Vypočítej!"></input>
+</form>

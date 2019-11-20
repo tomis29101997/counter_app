@@ -1,0 +1,16 @@
+<h1>ZPRACOVÁNÍ TEXTU {{delkalistu}}</h1>
+
+<a href= "{% url 'home' %}">DOMŮ</a>
+<br>
+{{fulltext}}
+
+<br><br>
+
+{% for key, value in worddict.items %}
+
+<br>
+
+{{key}}-{{value}}
+
+
+{% endfor %}
